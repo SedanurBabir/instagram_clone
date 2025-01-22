@@ -16,6 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
-// const storage = getStorage(app); //firebase'de ücretli plana dahil olması sebebiyle kullanılmıyor
+const storage = getStorage(app); //firebase'de ücretli plana dahil olması sebebiyle kullanılmıyor
 
-export { app, auth, firestore };
+export { app, auth, firestore, storage };
